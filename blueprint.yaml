@@ -12,7 +12,9 @@ integrations: [ "qcom-aware" ]
 hardwareDependencies:
   - name: Tracker One
     link: https://www.particle.io/tracker-one/
+    tags: [ "Tracker One" ]
   - name: Particle T-SoM Module
     link: https://www.particle.io/tracker-som/
+    tags: [ "T-SoM" ]
 description: |
   A soup to nuts Asset Tracking solution containing location services, a myridiad of power modes and configuration capabilities.
