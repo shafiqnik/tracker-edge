@@ -8,7 +8,7 @@ version: 1.19.0
 models: []
 language: [ "C++" ]
 cloudServices: [ "Integrations", "Logic", "Ledger", "Lake" ]
-integrations: [ "qcom-aware" ]
+integrations: [ ]
 hardwareDependencies:
   - name: Tracker One
     link: https://www.particle.io/tracker-one/
