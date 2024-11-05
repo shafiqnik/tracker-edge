@@ -3,11 +3,11 @@ category: solution
 icon: particle.png
 gitrepo: https://github.com/particle-iot/tracker-edge
 name: "Tracker Edge"
-shortDescription: "A complete reference Asset Tracking solution"
+shortDescription: "A complete reference asset tracking solution"
 version: 1.19.0
 models: []
 language: [ "C++" ]
-cloudServices: [ ]
+cloudServices: [ "Integrations", "Logic", "Ledger", "Lake" ]
 integrations: [ "qcom-aware" ]
 hardwareDependencies:
   - name: Tracker One
@@ -17,4 +17,13 @@ hardwareDependencies:
     link: https://www.particle.io/tracker-som/
     tags: [ "T-SoM" ]
 description: |
-  A soup to nuts Asset Tracking solution containing location services, a myridiad of power modes and configuration capabilities.
+  A comprehensive asset tracking solution that includes location services, various power modes, and extensive configuration capabilities. 
+
+  Key Features:
+  - Real-Time Event Publishing: Publishes location on movement events, high-G events, and boundary crossings.
+  - Location and Diagnostics: Publishes satellite count and signal metrics for GNSS health. Enhanced location tracking with features like geofencing, circular zones, and high-accuracy GNSS data for both speed and lock stability.
+  - Battery and Power Management: Optimized battery state-of-charge accuracy, shutdown current, and configurable power modes. Includes control over battery charge limits based on operating temperatures to extend device life.
+  - Storage and Data Persistence: Store-and-forward feature enables data retention while offline, with reliable data uploads once connectivity is restored.
+  - Cloud Configuration: Includes cloud-configurable settings for various aspects like GNSS dead reckoning, power settings, and publish rates.
+  - Tracking in Extreme Conditions: Accurate tracking in poor conditions, sleep modes to conserve power, and configurable publish rates based on movement or location triggers.
+  - Device Health and Diagnostics: Built-in support for the Memfault platform for advanced device monitoring and diagnostics, as well as detailed event logging.
