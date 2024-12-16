@@ -149,7 +149,7 @@ void publishRawBLEMessage(const BleScanResult &scanResult) {
         
         String macStr = scanResult.address().toString();
           
-        if (macStr.startsWith("AC:23:3F")) {
+        if (macStr.startsWith("AC:23:3F:75")) {
             macAddresses += macStr + ", ";
             //Particle.publish("BLE_Raw dec13a", macStr, PRIVATE);
             //Particle.publish("mac addresses, ", macAddresses, PRIVATE);
